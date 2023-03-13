@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAE2ED"
+    tools:context=".Products">
+
+    <TextView
+        android:id="@+id/products_heading_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="40dp"
+        android:fontFamily="@font/alata"
+        android:text="Products"
+        android:textColor="#000000"
+        android:textSize="96px"
+        app:layout_constraintBottom_toTopOf="@+id/product6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SearchView
+        android:layout_width="281dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        android:background="#ffffff"
+        android:hint="Search"
+        app:layout_constraintBottom_toTopOf="@+id/products_heading_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/GoBackButton2"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#ff0000"
+        android:onClick="BackHome2"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/product5"
+        android:layout_width="177dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:onClick="productNine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/products_heading_1"
+        app:srcCompat="@drawable/kinder_bueno" />
+
+    <ImageView
+        android:id="@+id/product6"
+        android:layout_width="170dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="17dp"
+        android:onClick="productTen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/products_heading_1"
+        app:srcCompat="@drawable/mars_image" />
+
+    <ImageView
+        android:id="@+id/product7"
+        android:layout_width="172dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:onClick="productEleven"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product5"
+        app:srcCompat="@drawable/galaxy_image" />
+
+    <ImageView
+        android:id="@+id/product8"
+        android:layout_width="194dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="81dp"
+        android:onClick="productTwelve"
+        app:layout_constraintStart_toEndOf="@+id/product7"
+        app:layout_constraintTop_toBottomOf="@+id/product6"
+        app:srcCompat="@drawable/kit_kat_image" />
+
+    <TextView
+        android:id="@+id/pro9_name"
+        android:layout_width="162dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Kinder Bueno Bars"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product5" />
+
+    <TextView
+        android:id="@+id/pro9_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="£35.00"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pro9_name" />
+
+    <TextView
+        android:id="@+id/pro9_vat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="1dp"
+        android:text="20% VAT"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro9_price"
+        app:layout_constraintTop_toBottomOf="@+id/pro9_name" />
+
+    <TextView
+        android:id="@+id/pro9_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:text="PF9428"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pro9_price" />
+
+    <TextView
+        android:id="@+id/pro10_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="Mars Bars"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro9_name"
+        app:layout_constraintTop_toBottomOf="@+id/product6" />
+
+    <TextView
+        android:id="@+id/pro10_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:text="£29.99"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro9_vat"
+        app:layout_constraintTop_toBottomOf="@+id/pro10_name" />
+
+    <TextView
+        android:id="@+id/pro10_vat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="7dp"
+        android:text="20% VAT"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro10_price"
+        app:layout_constraintTop_toBottomOf="@+id/pro10_name" />
+
+    <TextView
+        android:id="@+id/pro10_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="155dp"
+        android:text="RJ3849"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pro9_code"
+        app:layout_constraintTop_toBottomOf="@+id/pro10_price" />
+
+    <TextView
+        android:id="@+id/pro11_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:text="Mars Galaxy Milk Chocolate Bars"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product7" />
+
+    <TextView
+        android:id="@+id/pro11_vat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="20% VAT"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro11_price"
+        app:layout_constraintTop_toBottomOf="@+id/pro11_name" />
+
+    <TextView
+        android:id="@+id/pro11_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="£28.00"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pro11_name" />
+
+    <TextView
+        android:id="@+id/pro11_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="TA9392"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pro11_price" />
+
+    <TextView
+        android:id="@+id/pro12_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="27dp"
+        android:text="Nestle Kit Kat Bars"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro11_name"
+        app:layout_constraintTop_toBottomOf="@+id/product8" />
+
+    <TextView
+        android:id="@+id/pro12_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="13dp"
+        android:text="£35.00"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro11_vat"
+        app:layout_constraintTop_toBottomOf="@+id/pro12_name" />
+
+    <TextView
+        android:id="@+id/pro12_vat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="13dp"
+        android:text="20% VAT"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro12_price"
+        app:layout_constraintTop_toBottomOf="@+id/pro12_name" />
+
+    <TextView
+        android:id="@+id/pro12_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="10dp"
+        android:text="NR9493"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro11_code"
+        app:layout_constraintTop_toBottomOf="@+id/pro12_price" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAE2ED"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/register_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="137dp"
+        android:text="Register"
+        android:textColor="#000000"
+        android:textSize="95px"
+        android:fontFamily="@font/alata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fn_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:text="First Name"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ln_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:text="Last Name"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fn_heading" />
+
+    <TextView
+        android:id="@+id/email_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_heading" />
+
+    <TextView
+        android:id="@+id/phone_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="11dp"
+        android:text="Phone No."
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_input" />
+
+    <TextView
+        android:id="@+id/street_number_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:text="Street No."
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_heading" />
+
+    <TextView
+        android:id="@+id/address_one_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:text="Address Line 1"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/street_number_input" />
+
+    <TextView
+        android:id="@+id/address_two_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Address Line 2"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_one_heading" />
+
+    <TextView
+        android:id="@+id/town_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:text="Town"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_two_heading" />
+
+    <TextView
+        android:id="@+id/county_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="9dp"
+        android:text="County"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/town_input" />
+
+    <TextView
+        android:id="@+id/postcode_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="7dp"
+        android:text="Postcode"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintEnd_toStartOf="@+id/postcode_input"
+        app:layout_constraintTop_toBottomOf="@+id/county_input" />
+
+    <TextView
+        android:id="@+id/password_heading_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="17dp"
+        android:text="Password"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postcode_heading" />
+
+    <TextView
+        android:id="@+id/confirm_password_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="13dp"
+        android:text="Confirm Password"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintEnd_toStartOf="@+id/password_input_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_input_1" />
+
+    <Button
+        android:id="@+id/back_button_1"
+        android:layout_width="125dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="140dp"
+        android:backgroundTint="#ff0000"
+        android:onClick="backToTermsAndConditions"
+        android:text="Back"
+        app:layout_constraintEnd_toStartOf="@+id/next_button_1"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password_heading" />
+
+    <Button
+        android:id="@+id/next_button_1"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="31dp"
+        android:backgroundTint="#ff0000"
+        android:onClick="ChooseAMembershipCard"
+        android:text="Next"
+        app:layout_constraintStart_toEndOf="@+id/back_button_1"
+        app:layout_constraintTop_toBottomOf="@+id/password_input_2" />
+
+    <EditText
+        android:id="@+id/fn_input"
+        android:layout_width="255dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:backgroundTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_heading" />
+
+    <EditText
+        android:id="@+id/ln_input"
+        android:layout_width="246dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/ln_heading"
+        app:layout_constraintTop_toBottomOf="@+id/fn_input" />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="291dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="34dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ln_input" />
+
+    <EditText
+        android:id="@+id/phone_no"
+        android:layout_width="259dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:backgroundTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_input" />
+
+    <EditText
+        android:id="@+id/street_number_input"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="198dp"
+        android:ems="10"
+        android:inputType="number"
+        android:backgroundTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_no" />
+
+    <EditText
+        android:id="@+id/address_input_one"
+        android:layout_width="216dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="34dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/street_number_input" />
+
+    <EditText
+        android:id="@+id/address_input_two"
+        android:layout_width="206dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="44dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_input_one" />
+
+    <EditText
+        android:id="@+id/town_input"
+        android:layout_width="304dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="34dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_input_two" />
+
+    <EditText
+        android:id="@+id/county_input"
+        android:layout_width="281dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="33dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/town_input" />
+
+    <EditText
+        android:id="@+id/postcode_input"
+        android:layout_width="254dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        app:layout_constraintStart_toEndOf="@+id/postcode_heading"
+        app:layout_constraintTop_toBottomOf="@+id/county_input" />
+
+    <EditText
+        android:id="@+id/password_input_1"
+        android:layout_width="267dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:backgroundTint="#000000"
+        app:layout_constraintStart_toEndOf="@+id/password_heading_1"
+        app:layout_constraintTop_toBottomOf="@+id/postcode_input" />
+
+    <EditText
+        android:id="@+id/password_input_2"
+        android:layout_width="215dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:backgroundTint="#000000"
+        app:layout_constraintStart_toEndOf="@+id/confirm_password_heading"
+        app:layout_constraintTop_toBottomOf="@+id/password_input_1" />
+
+    <ImageView
+        android:id="@+id/eye_icon_1"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintStart_toEndOf="@+id/password_input_1"
+        app:layout_constraintTop_toBottomOf="@+id/county_input"
+        app:srcCompat="@drawable/visible_eye_icon_1" />
+
+    <ImageView
+        android:id="@+id/eye_icon_2"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eye_icon_1"
+        app:srcCompat="@drawable/visible_eye_icon_1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAE2ED"
+    tools:context=".Promotions">
+
+    <TextView
+        android:id="@+id/promotions_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginEnd="113dp"
+        android:fontFamily="@font/alata"
+        android:text="Promotions"
+        android:textColor="#000000"
+        android:textSize="95px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="263dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="14dp"
+        android:background="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="146dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:onClick="productFive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promotions_heading"
+        app:srcCompat="@drawable/coffeemachine1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="155dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="46dp"
+        android:onClick="productSix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/promotions_heading"
+        app:srcCompat="@drawable/airfryer2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="168dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="productSeven"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/fairy_liquid" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="183dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="productEight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/ferrero_rocher" />
+
+    <Button
+        android:id="@+id/GoBackButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="308dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="#ff0000"
+        android:onClick="GoBackHome"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/pro1_name"
+        android:layout_width="167dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="TASSIMO Bosch My Way 2 Coffee Machine"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/pro1_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="£40.00"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/pro1_code"
+        tools:layout_editor_absoluteX="21dp" />
+
+    <TextView
+        android:id="@+id/pro1_vat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No VAT"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <TextView
+        android:id="@+id/pro1_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="23dp"
+        android:text="EJ9482"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pro2_name"
+        android:layout_width="152dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="44dp"
+        android:text="Corsori Air Fryer with 100 Recipes Cookbook"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/pro2_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="£45.99"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/pro2_code"
+        app:layout_constraintStart_toEndOf="@+id/pro1_name" />
+
+    <TextView
+        android:id="@+id/pro2_vat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="56dp"
+        android:text="20% VAT"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pro2_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="41dp"
+        android:text="MF8395"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pro3_name"
+        android:layout_width="153dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:text="Fairy Original Washing Up Liquid"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/pro3_vat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="20% VAT"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro3_price"
+        app:layout_constraintTop_toBottomOf="@+id/pro3_name" />
+
+    <TextView
+        android:id="@+id/pro3_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="1dp"
+        android:text="£14.00"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pro3_name" />
+
+    <TextView
+        android:id="@+id/pro3_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:text="SJ18493"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pro3_price" />
+
+    <TextView
+        android:id="@+id/pro4_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:text="Ferrero Rocher 16 pack"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro3_name"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/pro4_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="13dp"
+        android:text="£12.50"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/pro3_vat"
+        app:layout_constraintTop_toBottomOf="@+id/pro4_name" />
+
+    <TextView
+        android:id="@+id/pro4_vat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="89dp"
+        android:text="No VAT"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pro4_name" />
+
+    <TextView
+        android:id="@+id/pro4_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="7dp"
+        android:text="DQ57868"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/GoBackButton1"
+        app:layout_constraintTop_toBottomOf="@+id/pro4_price" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

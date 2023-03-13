@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAE2ED"
+    tools:context=".ProofAddress">
+
+    <TextView
+        android:id="@+id/proofaddress_heading"
+        android:layout_width="383dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="16dp"
+        android:text="Proof your Name and Address"
+        android:textColor="#000000"
+        android:textSize="75px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/proof_paragraph"
+        android:layout_width="378dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="21dp"
+        android:text="Attach your scanned documents e.g, passport;
+driving licence; employee ID Card"
+        android:textColor="#000000"
+        android:textSize="60px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proofaddress_heading" />
+
+    <Button
+        android:id="@+id/uploadFILE_button"
+        android:layout_width="216dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="157dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Upload your file"
+        android:onClick="Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proof_paragraph" />
+
+
+    <Button
+        android:id="@+id/back_button_3"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="352dp"
+        android:backgroundTint="#ff0000"
+        android:onClick="backToMembership"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/format_text" />
+
+    <Button
+        android:id="@+id/next_button_3"
+        android:layout_width="117dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="444dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#ff0000"
+        android:onClick="NextPayment"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proof_paragraph" />
+
+    <TextView
+        android:id="@+id/format_text"
+        android:layout_width="176dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uploadFILE_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAE2ED"
+    tools:context=".PaymentDetails">
+
+    <TextView
+        android:id="@+id/payment_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/alata"
+        android:text="Payment Details"
+        android:textColor="#000000"
+        android:textSize="90px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/card_type_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="29dp"
+        android:text="Card Type"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_heading" />
+
+    <TextView
+        android:id="@+id/cardholder_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Cardholder Name"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visa_image" />
+
+    <TextView
+        android:id="@+id/card_no_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:text="Card Number"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardholder_name" />
+
+    <TextView
+        android:id="@+id/expiry_date_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="23dp"
+        android:text="Expiry Date"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_no_heading" />
+
+    <TextView
+        android:id="@+id/CVV_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="33dp"
+        android:text="CVV"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expiry_date_heading" />
+
+    <TextView
+        android:id="@+id/total_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="32dp"
+        android:text="Total"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CVV_heading" />
+
+    <TextView
+        android:id="@+id/vat_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:text="VAT"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_output" />
+
+    <TextView
+        android:id="@+id/subtotal_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Subtotal"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vat_heading" />
+
+    <CheckBox
+        android:id="@+id/Optional_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="Would you like to post your card via address? (Optional)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtotal_output" />
+
+    <Button
+        android:id="@+id/back_button_5"
+        android:layout_width="141dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="57dp"
+        android:backgroundTint="#ff0000"
+        android:onClick="GoBacktoAttachFile"
+        android:text="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Optional_checkBox" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="147dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="57dp"
+        android:backgroundTint="#ff0000"
+        android:onClick="PaymentFinished"
+        android:text="Next"
+        app:layout_constraintStart_toEndOf="@+id/back_button_5"
+        app:layout_constraintTop_toBottomOf="@+id/Optional_checkBox" />
+
+    <ImageView
+        android:id="@+id/visa_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toEndOf="@+id/card_type_heading"
+        app:layout_constraintTop_toBottomOf="@+id/payment_heading"
+        app:srcCompat="@drawable/icons8_visa_48" />
+
+    <ImageView
+        android:id="@+id/mastercard_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toEndOf="@+id/visa_image"
+        app:layout_constraintTop_toBottomOf="@+id/payment_heading"
+        app:srcCompat="@drawable/icons8_mastercard_48" />
+
+    <ImageView
+        android:id="@+id/amex_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toEndOf="@+id/mastercard_image"
+        app:layout_constraintTop_toBottomOf="@+id/payment_heading"
+        app:srcCompat="@drawable/icons8_american_express_48" />
+
+    <ImageView
+        android:id="@+id/stripe_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toEndOf="@+id/amex_image"
+        app:layout_constraintTop_toBottomOf="@+id/payment_heading"
+        app:srcCompat="@drawable/icons8_stripe_48" />
+
+    <EditText
+        android:id="@+id/cardholder_name_input"
+        android:layout_width="221dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/cardholder_name"
+        app:layout_constraintTop_toBottomOf="@+id/mastercard_image" />
+
+    <EditText
+        android:id="@+id/card_number_input"
+        android:layout_width="263dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/card_no_heading"
+        app:layout_constraintTop_toBottomOf="@+id/cardholder_name_input" />
+
+    <EditText
+        android:id="@+id/cvv_input"
+        android:layout_width="117dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/CVV_heading"
+        app:layout_constraintTop_toBottomOf="@+id/month_spinner" />
+
+    <TextView
+        android:id="@+id/total_output"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="271dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="45px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_heading" />
+
+    <TextView
+        android:id="@+id/vat_output"
+        android:layout_width="107dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="248dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="45px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vat_heading"
+        app:layout_constraintTop_toBottomOf="@+id/total_output" />
+
+    <TextView
+        android:id="@+id/subtotal_output"
+        android:layout_width="106dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="217dp"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="45px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subtotal_heading"
+        app:layout_constraintTop_toBottomOf="@+id/vat_output" />
+
+    <Spinner
+        android:id="@+id/month_spinner"
+        android:layout_width="105dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/expiry_date_heading"
+        app:layout_constraintTop_toBottomOf="@+id/card_number_input" />
+
+    <Spinner
+        android:id="@+id/year_spinner"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        app:layout_constraintStart_toEndOf="@+id/month_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/card_number_input" />
+</androidx.constraintlayout.widget.ConstraintLayout>

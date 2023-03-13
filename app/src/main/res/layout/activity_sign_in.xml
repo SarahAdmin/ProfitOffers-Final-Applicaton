@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAE2ED"
+    tools:context=".SignIn">
+
+    <TextView
+        android:id="@+id/sign_in_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="169dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Sign In"
+        android:textColor="#000000"
+        android:textSize="110px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="73dp"
+        android:text="Username"
+        android:textColor="#000000"
+        android:textSize="68px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_heading" />
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/username_heading"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_heading" />
+
+    <TextView
+        android:id="@+id/password_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="33dp"
+        android:text="Password"
+        android:textColor="#000000"
+        android:textSize="68px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_heading" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="260dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/password_heading"
+        app:layout_constraintTop_toBottomOf="@+id/username_input" />
+
+    <TextView
+        android:id="@+id/subheading_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="58dp"
+        android:text="Register for Membership?"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+
+    <TextView
+        android:id="@+id/subheading_2"
+        android:layout_width="168dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="15dp"
+        android:text="Forgot Password?"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subheading_1" />
+
+    <TextView
+        android:id="@+id/navigateClick1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="58dp"
+        android:onClick="RegisterNow"
+        android:text="Click Here"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toEndOf="@+id/subheading_1"
+        app:layout_constraintTop_toBottomOf="@+id/password_input" />
+
+    <TextView
+        android:id="@+id/navigateClick2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="19dp"
+        android:onClick="ChangeYourPassword"
+        android:text="Change your password"
+        android:textColor="#000000"
+        android:textSize="50px"
+        app:layout_constraintStart_toEndOf="@+id/subheading_2"
+        app:layout_constraintTop_toBottomOf="@+id/subheading_1" />
+
+    <Button
+        android:id="@+id/enter_button"
+        android:layout_width="153dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="62dp"
+        android:backgroundTint="#ff0000"
+        android:text="Enter"
+        android:onClick="SubmitLogin"
+        app:layout_constraintBottom_toTopOf="@+id/back_arrow_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subheading_2" />
+
+    <ImageView
+        android:id="@+id/back_arrow_1"
+        android:layout_width="110dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="285dp"
+        android:onClick="BackToHomePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_button"
+        app:srcCompat="@drawable/left_arrow__1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

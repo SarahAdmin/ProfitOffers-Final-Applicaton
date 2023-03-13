@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAE2ED"
+    tools:context=".TermsandConditions">
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="409dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/terms_and_conditions_heading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/terms_and_conditions_heading"
+            android:layout_width="396dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="7dp"
+            android:fontFamily="@font/alata"
+            android:text="Terms and Conditions"
+            android:textColor="#000000"
+            android:textSize="90px"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+        <TextView
+            android:id="@+id/infoOne"
+            android:layout_width="376dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="32dp"
+            android:text="1) the use of the application; and 2)
+our sale and supply of products and services via this application.
+We handle your Personal Data in accordance with our Privacy Policy.
+By accepting this the ProfitOffers card to access a wholesale branch or purchasing
+and any authorised user or name cardholders contest to these terms and conditions and expressly agree
+to be bound by, observe and perform and terms and conditions of use from time to time force. "
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/terms_and_conditions_heading" />
+
+        <TextView
+            android:id="@+id/infoTwo"
+            android:layout_width="380dp"
+            android:layout_height="296dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="14dp"
+            android:text="For the purposes set out in this Privacy Policy, we collect the following personal data:
+1) Identification data, such as your name, title, marital status, photograph (taken at Costco’s premises for your membership card), date of birth, identity document (national identification card, foreigner identification number, passport or residence permit, and/or tax identification number),
+and of course your ProfitOffers membership number.
+2)Contact data, such as your address, email address, home phone number, and mobile phone or other phone number for contact purposes.
+3) If you are a ProfitOffers member, each membership account has an individual primary account holder who is authorised to designate and remove add-on members and make other account management decisions. Please be aware that information about all activities occurring under the account, including transactions completed by add-on members, will be available to the primary account holder. Similarly each online subscription account has a primary subscriber; information relating to all activities occurring under the online account is available to the subscriber of record.
+"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoOne" />
+
+        <CheckBox
+            android:id="@+id/acceptedCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="165dp"
+            android:text="I Accepted Terms and Conditions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infoTwo" />
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="133dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="126dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#ff0000"
+            android:text="Continue"
+            android:onClick="RegisterContinue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/acceptedCheckbox" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProfitOffers"
+        tools:targetApi="31" >
+        <activity
+            android:name=".Product12"
+            android:exported="false" />
+        <activity
+            android:name=".Product1"
+            android:exported="false" />
+        <activity
+            android:name=".Product11"
+            android:exported="false" />
+        <activity
+            android:name=".Product10"
+            android:exported="false" />
+        <activity
+            android:name=".Product9"
+            android:exported="false" />
+        <activity
+            android:name=".Product8"
+            android:exported="false" />
+        <activity
+            android:name=".Product7"
+            android:exported="false" />
+        <activity
+            android:name=".Product6"
+            android:exported="false" />
+        <activity
+            android:name=".Product5"
+            android:exported="false" />
+        <activity
+            android:name=".Product4"
+            android:exported="false" />
+        <activity
+            android:name=".Product3"
+            android:exported="false" />
+        <activity
+            android:name=".Product2"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Promotions"
+            android:exported="false" />
+        <activity
+            android:name=".Products"
+            android:exported="false" />
+        <activity
+            android:name=".FeaturedProducts"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentSucceed"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".ProofAddress"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseACard"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".TermsandConditions"
+            android:exported="false" />
+        <activity
+            android:name=".BranchLocation"
+            android:exported="false" />
+        <activity
+            android:name=".MembershipClub"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".shoppingbasket"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
